@@ -1,0 +1,24 @@
+<!--pages/personal_center/personal_center.wxml-->
+<view class="user_information">
+  <!-- <image class="avator" src="/images/avatar.png"></image> -->
+  <view class="avator">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <div class="user_text">
+    <div class="namemessage">
+      <open-data type="userNickName"></open-data>      
+    </div>
+  </div>
+  <image class="inpic" src="/images/back.png"></image>
+</view>
+<view class="line"></view>
+
+<view class="user_information" bindtap="carManage">
+  <image class="avator" src="/images/carmanagement.png"></image>
+  <div class="user_text">
+    <text class="namemessage">车辆管理</text>
+    <text class="id">嘟嘟嘟——</text>
+  </div>
+  <image class="inpic" src="/images/back.png"></image>
+</view>
+<view class="line"></view>

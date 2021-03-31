@@ -1,0 +1,25 @@
+<!--pages/car_manage/car_manage.wxml-->
+<view class="carinfo">
+  <view>
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+    </block>
+    <block wx:else>
+      <block wx:if="{{!carInfo.length}}">
+        <image src="/images/nocar.png"></image>
+        <text>\n</text>
+        <text>没有车哦</text>
+      </block>
+      <block wx:else>
+        <!-- display vehicles -->
+        <view wx:for="{{carInfo}}" wx:for-item="car" class="carinfo">
+          <view class="car">
+            <image src="{{car.pictures[0]}}" class="img"></image>
+            <p>{{car.vehicleId}}</p>
+            <p>{{car.licensePlate}}</p>
+          </view>
+        </view>
+      </block>
+    </block>
+  </view>
+</view>

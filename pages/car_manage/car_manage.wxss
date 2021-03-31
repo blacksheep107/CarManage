@@ -1,0 +1,22 @@
+/* pages/car_manage/car_manage.wxss */
+button{
+  color: white;
+  background-color: green;
+  border-radius: 3px;
+  margin-top: 50px;
+  padding: 100px;
+}
+.carinfo{
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 20px;
+}
+.car{
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid gray;
+}
+.img{
+  width: 100px;
+  height: 100px;
+}

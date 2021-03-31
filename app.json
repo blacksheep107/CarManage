@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/personal_center/personal_center",
+    "pages/message/message",
+    "pages/trends/trends",
+    "pages/car_manage/car_manage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#bfbfbf",
+    "selectedColor": "#d81e06",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/images/message.png",
+        "selectedIconPath": "/images/messageon.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "论坛",
+        "iconPath": "/images/forum.png",
+        "selectedIconPath": "/images/forumon.png"
+      },
+      {
+        "pagePath": "pages/personal_center/personal_center",
+        "text": "我",
+        "iconPath": "/images/mine.png",
+        "selectedIconPath": "/images/mineon.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

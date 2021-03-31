@@ -1,5 +1,5 @@
 <!--pages/car_manage/car_manage.wxml-->
-<view class="carinfo">
+<view>
   <view>
     <block wx:if="{{!hasUserInfo}}">
       <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
@@ -14,12 +14,15 @@
         <!-- display vehicles -->
         <view wx:for="{{carInfo}}" wx:for-item="car" class="carinfo">
           <view class="car">
+            <!-- first image in pictures -->
             <image src="{{car.pictures[0]}}" class="img"></image>
-            <p>{{car.vehicleId}}</p>
-            <p>{{car.licensePlate}}</p>
+            <text class="text">{{car.type}}</text>
+            <text class="text">{{car.licensePlate}}</text>
+            <text class="text">{{car.color}}</text>
           </view>
         </view>
       </block>
+      <button bindtap="addCar">添加车辆</button>
     </block>
   </view>
 </view>

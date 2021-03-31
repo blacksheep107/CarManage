@@ -5,14 +5,12 @@ Page({
     canIUseGetUserProfile: false,
     carInfo:[
       {
-        "vehicleId":"123",
+        "type":"汽车",
         "pictures":[
           "/images/mine.png"
         ],
-        "licensePlate":"闽A12112"
-      },
-      {
-        "vehicleId":"234",
+        "licensePlate":"闽A12112",
+        "color":"粉色",
       },
     ], // 车辆信息
   },
@@ -39,7 +37,15 @@ Page({
         }
       }
     });
-
+  },
+  addCar(){
+    // go to addCar page
+    wx.navigateTo({
+      url: '../add_car/add_car',
+      success:res=>{
+        console.log(res);
+      }
+    })
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认

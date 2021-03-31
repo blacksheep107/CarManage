@@ -1,0 +1,5 @@
+<!--pages/add_car/add_car.wxml-->
+<view class="column">
+  
+  <button>添加</button>
+</view>

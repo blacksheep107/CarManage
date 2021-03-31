@@ -1,0 +1,13 @@
+/* pages/add_car/add_car.wxss */
+button{
+  color: white;
+  background-color: green;
+  border-radius: 3px;
+  margin-top: 50px;
+  padding: 100px;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}

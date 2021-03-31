@@ -1,35 +1,18 @@
-// pages/personal_center/personal_center.js
-
+// pages/add_car/add_car.js
 Page({
-  carManage() {
-    wx.navigateTo({
-      url: '../car_manage/car_manage',
-      success:function(res){
-        console.log("跳转到车辆管理页面，成功！");
-      }
-    });
-  },
+
   /**
    * 页面的初始数据
    */
   data: {
-    
+
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
-    wx.login({
-      success(res){
-        if(res.code){
-          console.log(res.code);
-          wx.request({
-            url: 'url',
-          })
-        }
-      }
-    });
   },
 
   /**

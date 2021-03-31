@@ -3,7 +3,8 @@
     "pages/personal_center/personal_center",
     "pages/message/message",
     "pages/trends/trends",
-    "pages/car_manage/car_manage"
+    "pages/car_manage/car_manage",
+    "pages/add_car/add_car"
   ],
   "window": {
     "backgroundTextStyle": "light",

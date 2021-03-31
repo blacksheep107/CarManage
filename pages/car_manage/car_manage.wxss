@@ -14,9 +14,17 @@ button{
 .car{
   display: flex;
   flex-flow: row wrap;
-  border: 1px solid gray;
+  align-items: center;
+  border: 5px solid rgb(223, 222, 222);
+  border-radius: 3px;
+  background-color: rgb(194, 194, 194);
 }
 .img{
   width: 100px;
   height: 100px;
+}
+.text{
+  margin-left: 20px;
+  font-size: large;
+  font-weight: bold;
 }

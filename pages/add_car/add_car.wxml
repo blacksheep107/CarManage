@@ -1,5 +1,31 @@
 <!--pages/add_car/add_car.wxml-->
-<view class="column">
-  
-  <button>添加</button>
+<view class="container">
+  <form class="form" bindsubmit="formSubmit">
+    <h2>填写车辆信息</h2>
+    <view class="form-control">
+      <view class="selecton_title">车辆类型</view>
+      <picker bindchange="carType" value="{{index}}" range="{{array}}" name="{{index}}">
+        <view class="picker">
+          {{array[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class="form-control">
+      <label for="carnum" name="licensePlate">车牌号</label>
+      <input type="text" id="carnum" placeholder="输入车牌号" />
+    </view>
+    <view class="form-control">
+      <label for="brand">品牌</label>
+      <input name="brand" type="text" id="brand" placeholder="输入车辆品牌" />
+    </view>
+    <view class="form-control">
+      <label for="color">颜色</label>
+      <input name="color" type="text" id="color" placeholder="输入车辆颜色" />
+    </view>
+    <view class="form-control">
+      <button bindtap="chooseImageTap">上传图片</button>
+    </view>
+    <button bindtap="submit">添加</button>    
+  </form>
+
 </view>

@@ -16,27 +16,27 @@ Page({
   },
   onLoad() {
     console.log(this.data.carInfo.length);
-    let that=this;
-    wx.getStorage({
-      key: 'userInfo',
-      success:function(res){
-        that.setData({
-          userInfo:res.data,
-          hasUserInfo:true
-        });
-        console.log("Get storage success, store infomation:");
-        console.log(res.data);
-      },
-      fail:function(res){
-        // 没缓存
-        console.log(res);
-        if (wx.getUserProfile) {
-          that.setData({
-            canIUseGetUserProfile: true
-          })
-        }
-      }
-    });
+    // let that=this;
+    // wx.getStorage({
+    //   key: 'userInfo',
+    //   success:function(res){
+    //     that.setData({
+    //       userInfo:res.data,
+    //       hasUserInfo:true
+    //     });
+    //     console.log("Get storage success, store infomation:");
+    //     console.log(res.data);
+    //   },
+    //   fail:function(res){
+    //     // 没缓存
+    //     console.log(res);
+    //     if (wx.getUserProfile) {
+    //       that.setData({
+    //         canIUseGetUserProfile: true
+    //       })
+    //     }
+    //   }
+    // });
   },
   addCar(){
     // go to addCar page

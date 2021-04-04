@@ -15,7 +15,7 @@ Component({
         selectedIconPath: "/images/messageon.png"
       },
       {
-        pagePath: "/pages/message/message",
+        pagePath: "/pages/trends/trends",
         text:"论坛",
         iconPath: "/images/forum.png",
         selectedIconPath: "/images/forumon.png"

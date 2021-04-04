@@ -13,7 +13,7 @@
 </view>
 <view class="line"></view>
 
-<view class="user_information" bindtap="carManage">
+<view class="user_information" bindtap="getInfo">
   <image class="avator" src="/images/carmanagement.png"></image>
   <div class="user_text">
     <text class="namemessage">车辆管理</text>

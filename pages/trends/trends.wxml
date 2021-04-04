@@ -1,2 +1,28 @@
 <!--pages/trends/trends.wxml-->
-<text>pages/trends/trends.wxml</text>
+<view wx:for="{{trendlists}}" wx:for-item="trend" class="trendlists">
+  <view class="trend">
+    <!-- one trend -->
+    <view class="header">
+      <image class="avator" src="{{trend.avatarUrl}}"></image>
+      <view class="nameAndDate">
+        <text class="name">{{trend.userName}}</text>
+        <text class="date">{{trend.postTime}}</text>
+      </view>
+    </view>
+    <view class="content">
+      <text class="contenttext">{{trend.content}}</text>
+    </view>
+    <view class="footer">
+      <image class="goodImg" src="/images/like.png"></image>
+      <image class="commentImg" src="/images/comment.png" bindtap="comment"></image>
+    </view>
+    <view class="line-small"></view>
+    <view wx:for="{{trend.comments}}" wx:for-item="comment" class="comments">
+      <view class="onecomment">
+        <text class="commentName">{{comment.name}}：</text>
+        <text class="commentContent">{{comment.content}}</text>        
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+</view>

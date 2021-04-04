@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "发现",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#000000"
 }

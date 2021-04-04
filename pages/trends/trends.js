@@ -5,9 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
+    trendlists:[
+      {
+        "avatarUrl":"/images/mine.png",
+        "userName":"testname",
+        "postTime":"testtime",
+        "content":"哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈",
+        "comments":[
+          {
+            "name":"testcommentname",
+            "content":"你笑尼玛呢，多打点字看看换行咋样"
+          },
+          {
+            "name":"看看多个评论",
+            "content":"在吗在吗在吗在吗在吗在吗在吗"
+          }
+        ]
+      },
+    ]
+  },
+  comment(e){
+    // 弹出输入框
 
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

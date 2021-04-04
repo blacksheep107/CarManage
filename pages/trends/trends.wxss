@@ -1,1 +1,86 @@
 /* pages/trends/trends.wxss */
+.trendlists{
+  display: flex;
+  flex-direction: column;
+}
+.trend{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+}
+.avator{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+.nameAndDate{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.name{
+  font-size: 20px;
+}
+.date{
+  font-size: 15px;
+  color: #50505059;
+}
+.content{
+  margin-top: 10px;
+  margin-left: 58px;
+  margin-right: 10px;
+}
+.line-small{
+  background: #dddddd;
+  width: 100%;
+  height: 5rpx;
+  margin-top: 10px;
+  margin-left: 58px;
+  margin-bottom: 5px;
+}
+.line{
+  background: #dddddd;
+  width: 100%;
+  height: 5rpx;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.comments{
+  display: flex;
+  flex-direction: column;
+  background-color: #d4d4d477;
+  margin-left: 58px;
+  margin-right: 25px;
+}
+.onecomment{
+  padding: 5px;
+}
+.commentName{
+  font-size: medium;
+  color: #002b86ce;
+  font-weight: bold;
+}
+.commentContent{
+  font-size: medium;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.goodImg{
+  height: 30px;
+  width: 30px;
+  margin-left: 58px;
+}
+.commentImg{
+  height: 30px;
+  width: 30px;
+  margin-right: 25px;
+}

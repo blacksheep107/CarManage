@@ -1,10 +1,10 @@
 <!--pages/car_manage/car_manage.wxml-->
 <view>
   <view>
-    <block wx:if="{{!hasUserInfo}}">
+    <!-- <block wx:if="{{!hasUserInfo}}">
       <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
     </block>
-    <block wx:else>
+    <block wx:else> -->
       <block wx:if="{{!carInfo.length}}">
         <image src="/images/nocar.png"></image>
         <text>\n</text>
@@ -23,6 +23,6 @@
         </view>
       </block>
       <button bindtap="addCar">添加车辆</button>
-    </block>
+    <!-- </block> -->
   </view>
 </view>

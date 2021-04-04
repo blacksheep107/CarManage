@@ -6,8 +6,53 @@ button{
   margin-top: 50px;
   padding: 100px;
 }
-.column{
+.container{
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  align-items: stretch;
+}
+.form{
+  display: block;
+}
+h2{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+
+.form-control{
+  margin-bottom: 20px;
+  display: block;
+}
+.form-control label{
+  color: #777;
+  display: block;
+  margin: 10px;
+  font-size: medium;
+
+}
+.form-control input{
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-size: large;
+  width: 100%;
+  padding: 10px;
+}
+.selecton_title{
+  color: #777;
+  display: block;
+  margin: 10px;
+  font-size: medium;
+}
+.picker{
+  color: #777;
+  display: block;
+  margin: 10px;
+  font-size: large;
+  text-align: center;
+  border: 2px solid #999999;
+  border-radius: 3px;
+  padding: 5px;
 }
